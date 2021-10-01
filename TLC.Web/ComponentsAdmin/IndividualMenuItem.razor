@@ -1,0 +1,63 @@
+﻿@inject IProductService productService
+@inject IOrderService orderService
+@inject IBasketService basketService
+@inject IJSRuntime js
+
+@if (EachProduct != null)
+{
+    <tr>
+        <td>
+            @*<NavLink href="@($"product/{Order.Id}")">
+
+                </NavLink>*@
+            @EachProduct.Id
+        </td>
+
+        <td>@EachProduct.Name</td>
+        <td>@EachProduct.Description</td>
+        <td>@EachProduct.Sold</td>
+
+        <td>@(EachProduct.Limit - EachProduct.Sold)/@EachProduct.Limit</td>
+
+        <td>
+            <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" role="button" @onclick="@(() => ArchiveProductSelect())"><ToolTip Text="Archive Product?"><i class="bi bi-archive-fill"></i></ToolTip></a>
+        </td>
+    </tr>
+}
+
+@code {
+    // setting state/object as parameter to take on value of paramter passed to component from parent
+    [Parameter]
+    public Product EachProduct { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // retrieving basket and assigning basketItems to var for display
+        // basket = basketService.GetBasket(BasketId);
+        // basketItems = basket.BasketItems;
+
+        // generating order from basketId
+        // var order = orderService.CreateOrder();
+        // order.BasketItems = basketItems;
+        // order.TotalPrice = basket.TotalPrice;
+
+    }
+
+    private async Task ArchiveProductSelect()
+    {
+        // here we are calling our js function from the IJSRuntimeExt...
+        await js.MyFunction("custom message");
+        // using JSRuntime to use the js confirm method to confirm deletion
+        // we have created a finction to confirm in Helpers -> IJSRuntimeExt...
+        var confirmed = await js.Confirm($"Are you sure you want to delete {EachProduct.Name}?");
+        if(confirmed)
+        {
+            var archived = productService.ArchiveProduct(EachProduct.Id);
+        }
+
+        // var deleted = productService.DeleteProduct(EachProduct.Id);
+    }
+
+
+
+}

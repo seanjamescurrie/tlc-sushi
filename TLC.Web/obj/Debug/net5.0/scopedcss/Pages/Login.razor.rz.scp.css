@@ -1,0 +1,60 @@
+.menu-nav[b-2xdapt1l4e] {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container[b-2xdapt1l4e] {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.login-card[b-2xdapt1l4e] {
+    background-color: #e5e5e5;
+    width: 28rem;
+}
+
+.card[b-2xdapt1l4e] {
+    background-color: #e5e5e5;
+}
+
+button[b-2xdapt1l4e] {
+    text-align: right;
+}
+
+.order-title[b-2xdapt1l4e] {
+    text-align: center;
+}
+
+
+
+.product-title[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-2xdapt1l4e] {
+    text-align: center;
+}
+
+.border-control[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}

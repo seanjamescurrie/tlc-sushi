@@ -1,0 +1,458 @@
+/* _content/TLC.Web/ComponentsAdmin/MenuList.razor.rz.scp.css */
+.add-product[b-aagdc0fqv3] {
+    font-size: 12px;
+    width: 10rem;
+    text-align: center;
+}
+/* _content/TLC.Web/ComponentsAdmin/NewProduct.razor.rz.scp.css */
+.new-product-form[b-323ne4x8j8] {
+    background-color: #e5e5e5;
+    width: 44rem;
+}
+
+.card[b-323ne4x8j8] {
+    background-color: #e5e5e5;
+}
+
+button[b-323ne4x8j8] {
+    text-align: right;
+}
+
+
+
+.product-title[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-323ne4x8j8] {
+    text-align: center;
+}
+
+.border-control[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+
+/* _content/TLC.Web/ComponentsBasket/BasketComponent.razor.rz.scp.css */
+.card-body[b-p0r4hq1yun] {
+    background-color: #e5e5e5e5;
+}
+
+.checkout-button[b-p0r4hq1yun] {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.basket-title[b-p0r4hq1yun] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin; 
+    border-bottom-color: #343a40;
+}
+
+.basket-item-list[b-p0r4hq1yun] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.icon[b-p0r4hq1yun] {
+    align-content: end;
+}
+
+.total-price[b-p0r4hq1yun] {
+    text-align: right;
+}
+
+.basket-footer[b-p0r4hq1yun] {
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+
+
+/* _content/TLC.Web/ComponentsBasket/BasketItemComponent.razor.rz.scp.css */
+a[b-uu62wyyuuj], p[b-uu62wyyuuj] {
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+/* _content/TLC.Web/ComponentsOrders/ConfirmOrder.razor.rz.scp.css */
+.confirm-order-form[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+    width: 32rem;
+}
+
+.card[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+}
+
+button[b-11fp70ztpq] {
+    text-align: right;
+}
+
+.form-control[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+    border-width: medium;
+}
+
+.order-title[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-11fp70ztpq] {
+    text-align: center;
+}
+
+.border-control[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+/* _content/TLC.Web/ComponentsProducts/IndividualProduct.razor.rz.scp.css */
+.card-horizontal[b-eg9v2pwdor] {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.item-price[b-eg9v2pwdor] {
+    text-align: right;
+}
+
+.card-body[b-eg9v2pwdor] {
+    background-color: #e5e5e5e5;
+}
+
+.add-basket[b-eg9v2pwdor] {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.product-details[b-eg9v2pwdor] {
+    padding-right: 1rem;
+    border-right-style: solid;
+    border-right-color: #343a40;
+    border-right-width: thin;
+}
+/* _content/TLC.Web/Pages/Index.razor.rz.scp.css */
+.menu-nav[b-f3lj75r9en] {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container[b-f3lj75r9en] {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+/* _content/TLC.Web/Pages/Login.razor.rz.scp.css */
+.menu-nav[b-2xdapt1l4e] {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container[b-2xdapt1l4e] {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.login-card[b-2xdapt1l4e] {
+    background-color: #e5e5e5;
+    width: 28rem;
+}
+
+.card[b-2xdapt1l4e] {
+    background-color: #e5e5e5;
+}
+
+button[b-2xdapt1l4e] {
+    text-align: right;
+}
+
+.order-title[b-2xdapt1l4e] {
+    text-align: center;
+}
+
+
+
+.product-title[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-2xdapt1l4e] {
+    text-align: center;
+}
+
+.border-control[b-2xdapt1l4e] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+/* _content/TLC.Web/Pages/ManageBusiness.razor.rz.scp.css */
+.menu-nav[b-8jvhgpzpib] {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container[b-8jvhgpzpib] {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+/* _content/TLC.Web/Shared/MainLayout.razor.rz.scp.css */
+.page[b-2buldars2a] {
+    
+}
+
+.main[b-2buldars2a] {
+    flex: 1;
+}
+
+.sidebar[b-2buldars2a] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-2buldars2a] {
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-2buldars2a]  a, .top-row .btn-link[b-2buldars2a] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-2buldars2a] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+body[b-2buldars2a] {
+    background-color: #e5e5e5;
+}
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-2buldars2a] {
+        display: none;
+    }
+
+    .top-row.auth[b-2buldars2a] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-2buldars2a], .top-row .btn-link[b-2buldars2a] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-2buldars2a] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-2buldars2a] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-2buldars2a] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .main > div[b-2buldars2a] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/TLC.Web/Shared/NavMenu.razor.rz.scp.css */
+/*nav {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}*/
+
+.navbar[b-hjlcshugx6] {
+    background-color: #e5e5e5;
+}
+.navbar-toggler[b-hjlcshugx6] {
+    
+}
+
+.top-row[b-hjlcshugx6] {
+}
+
+.navbar-brand[b-hjlcshugx6] {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.oi[b-hjlcshugx6] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-hjlcshugx6] {
+}
+
+    /*.nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }*/
+
+    .nav-item[b-hjlcshugx6]  a {
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item[b-hjlcshugx6]  a.active {
+            border-bottom-style: solid;
+            border-bottom-color: coral;
+            border-bottom-width: medium;
+        }
+
+.nav-item[b-hjlcshugx6]  a:hover {
+    /*background-color: rgba(255,255,255,0.1);
+    color: white;*/
+}
+
+.nav-link[b-hjlcshugx6] {
+    font-weight: 700;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link[b-hjlcshugx6]
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-hjlcshugx6] {
+        display: none;
+    }
+
+    .collapse[b-hjlcshugx6] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+/* _content/TLC.Web/Shared/ToolTip.razor.rz.scp.css */
+.tooltip-wrapper[b-zls6d9waix] {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    cursor: help;
+}
+
+span[b-zls6d9waix] {
+    visibility: hidden;
+    width: 100px;
+    height: 50px;
+    line-height: 1.5;
+    background-color: #343a40;
+    font-size: small;
+    color: #fff;
+    text-align: center;
+    vertical-align: central;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+}
+
+    span[b-zls6d9waix]::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.tooltip-wrapper:hover span[b-zls6d9waix] {
+    visibility: visible;
+    opacity: 0.6;
+}

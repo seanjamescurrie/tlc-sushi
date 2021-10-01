@@ -1,0 +1,58 @@
+﻿<div>
+    <div>
+        <!-- if we write multiple before accept we can allow user to select multiple files to upload -->
+        <InputFile accept=".jpg,.jpeg,.png" OnChange="OnChange" />
+    </div>
+
+    <div>
+
+        @if (imageBase64 != null)
+        {
+            <div>
+                <div style="margin:10px">
+                    <img src="data:image/jpeg;base64, @imageBase64" style="width:400px;" />
+                </div>
+            </div>
+        }
+
+        @if (ImageUrl != null)
+        {
+            <div>
+                <div style="margin:10px">
+                    <img src="@ImageUrl" style="width:400px;" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code { [Parameter] public string Label { get; set; } = "Image";
+    // passing base64 representation of image to parent component
+    [Parameter] public EventCallback<string> OnSelectedImage { get; set; }
+    //
+    [Parameter] public string ImageUrl { get; set; }
+    private string imageBase64;
+
+    async Task OnChange(InputFileChangeEventArgs e)
+    {
+        // allows user to select multiple files, in our case it is only one
+        var imageFiles = e.GetMultipleFiles();
+
+        // creating a byte array for file selected by user
+        //open a stream to transfer data to buffer (base 64 representation)
+        foreach (var imageFile in imageFiles)
+        {
+            var buffer = new byte[imageFile.Size];
+            await imageFile.OpenReadStream().ReadAsync(buffer);
+
+            imageBase64 = Convert.ToBase64String(buffer);
+
+            // firing EventCallback
+            await OnSelectedImage.InvokeAsync(imageBase64);
+            // do not want both if statements showing images at one time
+            ImageUrl = null;
+
+            StateHasChanged();
+        }
+    }
+    }

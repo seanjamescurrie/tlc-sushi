@@ -1,0 +1,24 @@
+.card-horizontal[b-eg9v2pwdor] {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.item-price[b-eg9v2pwdor] {
+    text-align: right;
+}
+
+.card-body[b-eg9v2pwdor] {
+    background-color: #e5e5e5e5;
+}
+
+.add-basket[b-eg9v2pwdor] {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.product-details[b-eg9v2pwdor] {
+    padding-right: 1rem;
+    border-right-style: solid;
+    border-right-color: #343a40;
+    border-right-width: thin;
+}

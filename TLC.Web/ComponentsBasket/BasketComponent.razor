@@ -1,0 +1,122 @@
+﻿@inject IBasketService basketService
+@inject IOrderService orderService
+<!-- https://www.syncfusion.com/faq/blazor/webassembly/how-do-i-pass-values-from-one-page-to-another-in-blazor-webassembly -->
+@inject NavigationManager navManager
+
+
+
+<div class="card border-dark mt-4 rounded-sm">
+    <div class="card-horizontal">
+        <div class="card-body d-flex flex-column">
+            <div class="container">
+
+                <div class="basket-title">
+                    <h6><b>BASKET</b><i class="bi bi-basket3-fill ml-2" style="float:right;"></i></h6>
+                    
+                </div>
+
+                <!-- Works but inefficient -->
+                @*<div class="basket-item-list">
+                        <GenericList List="BasketItems">
+                            <ElementTemplate>
+                                <BasketItemComponent BasketItem="context"></BasketItemComponent>
+                            </ElementTemplate>
+                        </GenericList>
+                    </div>*@
+
+                <div class="basket-item-list">
+                    @if (BasketItems.Count < 1)
+                    {
+                        <p><i>Basket Is Empty</i></p>
+                    }
+                    else
+                    {
+                        @foreach (var basketItem in BasketItems)
+                        {
+                            <BasketItemComponent BasketItem="basketItem" AddedOne="AddOne" MinusedOne="MinusOne"></BasketItemComponent>
+                        }
+                    }
+                </div>
+
+                <div class="basket-footer">
+                    <div class="row justify-content-between">
+                        <div class="col-6">
+                            <h6><b>TOTAL:</b></h6>
+                        </div>
+                        <div class="col-6 total-price">
+                            <h6><b>£@BasketParam.TotalPrice</b></h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="button" class="checkout-button align-self-end btn btn-dark btn-sm rounded-pill mt-2"
+                        @onclick="@(() => CheckOut(BasketParam))">
+                    <b>CHECKOUT</b>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public Basket BasketParam { get; set; }
+    // [Parameter] public EventCallback<Order> PlaceOrder { get; set; }
+
+    // [Parameter] public BasketItem BasketItem { get; set; }
+
+    public List<BasketItem> BasketItems = new List<BasketItem>();
+
+    @*private async Task OnQuantityChanged(Basket basket)
+        {
+
+        }*@
+
+    @*private async Task AddProduct()
+        {
+            var basketItem = basketService.AddProduct(BasketId, Product.Id);
+            var basket = basketService.GetBasket(BasketId);
+            await OnProductAdded.InvokeAsync(basket);
+        }
+    *@
+
+
+    protected override void OnInitialized()
+    {
+        // assigning basket items from parent component
+        BasketItems = BasketParam.BasketItems;
+    }
+
+    // Update basket with basketItems from basket - EVENTCALLBACK
+    private async Task AddOne(BasketItem item)
+    {
+
+    }
+    // Update basket with basketItems from basket - EVENTCALLBACK
+    private async Task MinusOne(BasketItem item)
+    {
+        BasketParam.TotalPrice -= item.Price;
+        if(item.Quantity == 0)
+        {
+            BasketItems.Remove(item);
+            StateHasChanged();
+        }
+    }
+
+    // Go to Confirm Order page
+    private void CheckOut(Basket basket)
+    {
+        navManager.NavigateTo($"confirm-order/{basket.Id}");
+    }
+
+    // added product details taken from child
+    // invoke callback
+    @*private async Task OnCheckout(Order order)
+        {
+            await PlaceOrder.InvokeAsync(order);
+        }*@
+
+
+}

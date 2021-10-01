@@ -1,0 +1,34 @@
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.deps.json
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\ref\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Data.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.CopyComplete
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\ref\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.deps.json
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\ref\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Blazor.Services.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\bin\Debug\net5.0\TLC.Data.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.csproj.CopyComplete
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\ref\TLC.Blazor.Services.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Blazor.Services\obj\Debug\net5.0\TLC.Blazor.Services.pdb

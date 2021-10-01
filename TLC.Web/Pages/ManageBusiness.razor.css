@@ -1,0 +1,13 @@
+﻿.menu-nav {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}

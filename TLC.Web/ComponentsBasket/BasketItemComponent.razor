@@ -1,0 +1,105 @@
+﻿@inject IBasketService basketService
+@inject IProductService productService
+
+
+<div class="row justify-content-between">
+    <div class="col-6">
+        <p><b>@productService.GetProduct(BasketItem.ProductId).Name</b></p>
+    </div>
+    <div class="col-6 " style="text-align: right;">
+
+        <!-- https://www.appvnext.com/blog/2020/3/7/blazor-shopping-cart-sample-using-local-storage-to-persist-state -->
+
+        <label>QTY: </label>
+
+        @*
+            <p>@BasketItem.Quantity</p>
+
+            <a href="#" class="btn btn-outline-dark btn-sm" role="button" @onclick="@(() => Delete())">
+                <ToolTip Text="Delete item">X</ToolTip>
+            </a>
+        *@
+
+        <a href="#" class="" role="button" @onclick="@(() => MinusOne())"><i class="bi bi-dash-circle-fill"></i></a>
+        <p>@BasketItem.Quantity</p>
+        <a href="#" class="" role="button" @onclick="@(() => AddOne())"><i class="bi bi-plus-circle-fill"></i></a>
+
+
+        <!-- https://stackoverflow.com/questions/58485439/select-box-binding-in-blazor -->
+        @*<EditForm Model="BasketItem">
+                <InputSelect @bind-Value="@BasketItem.Quantity" @onchange="EditQuantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </InputSelect>
+            </EditForm>*@
+
+        @*<label>QTY: </label>
+            <a href="#" class="btn btn-outline-dark btn-sm active" role="button" @onclick="MinusOne" @onchange="EditQuantity">-</a>
+            <p>@BasketItem.Quantity</p>
+            <a href="#" class="btn btn-outline-dark btn-sm active" role="button" @onclick="MinusOne" @onchange="EditQuantity">+</a>*@
+
+        @*<select @onchange="EditQuantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>*@
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter] public BasketItem BasketItem { get; set; }
+    [Parameter] public EventCallback<BasketItem> AddedOne { get; set; }
+    [Parameter] public EventCallback<BasketItem> MinusedOne { get; set; }
+
+    private int quantity = 1;
+
+    private void Delete()
+    {
+        var item = basketService.DeleteProduct(BasketItem.BasketId, BasketItem.ProductId);
+    }
+
+    private async Task AddOne()
+    {
+        // BasketItem.Quantity++;
+        // var item = basketService.EditQuantity(BasketItem.BasketId, BasketItem.ProductId, BasketItem.Quantity);
+        var item = basketService.AddProduct(BasketItem.BasketId, BasketItem.ProductId);
+        StateHasChanged();
+        await AddedOne.InvokeAsync(BasketItem);
+    }
+
+    private async Task MinusOne()
+    {
+        if (BasketItem.Quantity <= 1)
+        {
+            // var basket = basketService.GetBasket(BasketItem.BasketId);
+            // basket.TotalPrice -= BasketItem.Price;
+            var deleted = basketService.DeleteProduct(BasketItem.BasketId, BasketItem.ProductId);
+            StateHasChanged();
+            // passing back state of basket item
+            await MinusedOne.InvokeAsync(BasketItem);
+        }
+        else
+        {
+            BasketItem.Quantity--;
+            var basket = basketService.GetBasket(BasketItem.BasketId);
+            basket.TotalPrice -= BasketItem.Price;
+            var item = basketService.EditQuantity(BasketItem.BasketId, BasketItem.ProductId, BasketItem.Quantity);
+            // passing back state of basket item
+            await MinusedOne.InvokeAsync(BasketItem);
+        }
+
+    }
+
+    private void EditQuantity()
+    {
+        var item = basketService.EditQuantity(BasketItem.BasketId, BasketItem.ProductId, BasketItem.Quantity);
+        //StateHasChanged();
+    }
+}

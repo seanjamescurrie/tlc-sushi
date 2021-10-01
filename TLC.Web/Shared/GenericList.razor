@@ -1,0 +1,52 @@
+﻿@typeparam TItem
+
+@if (List == null)
+{
+@if (NullTemplate != null)
+{
+@NullTemplate }
+else
+{
+//if null we can set default content here
+<text><i>List is Null</i></text>} }
+
+
+else if (List.Count == 0)
+{
+@if (EmptyTemplate != null)
+{
+@EmptyTemplate }
+else
+{
+//if empty we can set default content here
+<text><i>Empty</i></text>} }
+
+
+else
+{
+@if (ElementTemplate != null)
+{
+
+@foreach (var element in List)
+{<!-- Calling our fragment and passing element of generic list -->
+@ElementTemplate(element)} }
+else
+{
+@WholeListTemplate                }}
+
+
+@code
+{ //if we only have one render fragment we can name it childcontent to pass content as instance of component
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    [Parameter] public RenderFragment NullTemplate { get; set; }
+    [Parameter] public RenderFragment EmptyTemplate { get; set; }
+
+    //Tells us how to render our list
+    [Parameter] public RenderFragment<TItem> ElementTemplate { get; set; }
+    [Parameter] public RenderFragment WholeListTemplate { get; set; }
+
+    //creating generic list to replace list of movies
+    [Parameter] public IList<TItem> List { get; set; } 
+}
+

@@ -1,0 +1,42 @@
+.card-body[b-p0r4hq1yun] {
+    background-color: #e5e5e5e5;
+}
+
+.checkout-button[b-p0r4hq1yun] {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.basket-title[b-p0r4hq1yun] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin; 
+    border-bottom-color: #343a40;
+}
+
+.basket-item-list[b-p0r4hq1yun] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.icon[b-p0r4hq1yun] {
+    align-content: end;
+}
+
+.total-price[b-p0r4hq1yun] {
+    text-align: right;
+}
+
+.basket-footer[b-p0r4hq1yun] {
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+
+

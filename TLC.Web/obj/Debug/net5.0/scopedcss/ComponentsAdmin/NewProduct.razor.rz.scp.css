@@ -1,0 +1,44 @@
+.new-product-form[b-323ne4x8j8] {
+    background-color: #e5e5e5;
+    width: 44rem;
+}
+
+.card[b-323ne4x8j8] {
+    background-color: #e5e5e5;
+}
+
+button[b-323ne4x8j8] {
+    text-align: right;
+}
+
+
+
+.product-title[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-323ne4x8j8] {
+    text-align: center;
+}
+
+.border-control[b-323ne4x8j8] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+

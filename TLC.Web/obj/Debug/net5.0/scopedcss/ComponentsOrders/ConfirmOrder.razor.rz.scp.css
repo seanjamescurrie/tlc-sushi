@@ -1,0 +1,45 @@
+.confirm-order-form[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+    width: 32rem;
+}
+
+.card[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+}
+
+button[b-11fp70ztpq] {
+    text-align: right;
+}
+
+.form-control[b-11fp70ztpq] {
+    background-color: #e5e5e5;
+    border-width: medium;
+}
+
+.order-title[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket[b-11fp70ztpq] {
+    text-align: center;
+}
+
+.border-control[b-11fp70ztpq] {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}

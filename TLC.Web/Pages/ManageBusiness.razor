@@ -1,0 +1,78 @@
+﻿@page "/order-management"
+@inject IProductService productService
+@inject IBasketService basketService
+@inject IOrderService orderService
+@*@attribute [Authorize(Roles = "Manager")]*@
+
+<div class="nav-container">
+    <div class="row d-flex mt-6 mb-2 my-auto">
+        <div class="col-12 text-center">
+            <button type="button" class="menu-nav btn btn-outline-dark btn rounded-pill"
+                    @onclick="@(() => ShowOrders())">
+                <b>ORDERS</b>
+            </button>
+
+            <button type="button" class="menu-nav btn btn-outline-dark btn rounded-pill"
+                    @onclick="@(() => ShowMenu())">
+                <b>MENU ITEMS</b>
+            </button>
+
+            <button type="button" class="menu-nav btn btn-outline-dark btn rounded-pill"
+                    @onclick="@(() => ShowArchive())">
+                <b>ARCHIVE</b>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="OrderList" hidden="@showOrders">
+    <OrderList Orders="orders"></OrderList>
+</div>
+
+<div class="MenuList" hidden="@showMenu">
+    <MenuList></MenuList>
+</div>
+
+<div class="ArchiveList" hidden="@showArchive">
+    <ArchiveList></ArchiveList>
+</div>
+
+@code {
+
+    private IList<Order> orders = new List<Order>();
+    private bool showOrders;
+    private bool showMenu;
+    private bool showArchive;
+
+    protected override void OnInitialized()
+    {
+        // decoupling component from data thanks to DI, data comes from a service
+        // good software architecture
+        orders = orderService.GetOrders();
+        showOrders = false;
+        showMenu = true;
+        showArchive = true;
+    }
+
+    private void ShowMenu()
+    {
+        showMenu = false;
+        showOrders = true;
+        showArchive = true;
+    }
+
+    private void ShowOrders()
+    {
+        showMenu = true;
+        showOrders = false;
+        showArchive = true;
+    }
+
+    private void ShowArchive()
+    {
+        showMenu = true;
+        showOrders = true;
+        showArchive = false;
+    }
+
+}

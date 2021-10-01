@@ -1,0 +1,348 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Web\\TLC.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\TLC.Blazor.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\TLC.Blazor.Services.csproj",
+        "projectName": "TLC.Blazor.Services",
+        "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\TLC.Blazor.Services.csproj",
+        "packagesPath": "C:\\Users\\SeanCurrie\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeanCurrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj"
+              },
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj",
+        "projectName": "TLC.Core",
+        "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj",
+        "packagesPath": "C:\\Users\\SeanCurrie\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeanCurrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj",
+        "projectName": "TLC.Data",
+        "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj",
+        "packagesPath": "C:\\Users\\SeanCurrie\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeanCurrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Build.Tasks.Core": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Web\\TLC.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Web\\TLC.Web.csproj",
+        "projectName": "TLC.Web",
+        "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Web\\TLC.Web.csproj",
+        "packagesPath": "C:\\Users\\SeanCurrie\\.nuget\\packages\\",
+        "outputPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeanCurrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\TLC.Blazor.Services.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Blazor.Services\\TLC.Blazor.Services.csproj"
+              },
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Core\\TLC.Core.csproj"
+              },
+              "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj": {
+                "projectPath": "C:\\CodeBase\\Project\\TLC6 - Copy\\TLC\\TLC\\TLC.Data\\TLC.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Blazorise.Bootstrap": {
+              "target": "Package",
+              "version": "[0.9.4.4, )"
+            },
+            "Blazorise.Icons.FontAwesome": {
+              "target": "Package",
+              "version": "[0.9.4.4, )"
+            },
+            "Blazorise.Sidebar": {
+              "target": "Package",
+              "version": "[0.9.4.4, )"
+            },
+            "EmbeddedBlazorContent": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "MatBlazor": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

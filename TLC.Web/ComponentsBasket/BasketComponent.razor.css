@@ -1,0 +1,42 @@
+﻿.card-body {
+    background-color: #e5e5e5e5;
+}
+
+.checkout-button {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.basket-title {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin; 
+    border-bottom-color: #343a40;
+}
+
+.basket-item-list {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.icon {
+    align-content: end;
+}
+
+.total-price {
+    text-align: right;
+}
+
+.basket-footer {
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+
+

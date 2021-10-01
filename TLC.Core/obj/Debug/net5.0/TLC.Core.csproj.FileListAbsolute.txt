@@ -1,0 +1,24 @@
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.deps.json
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\bin\Debug\net5.0\ref\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\ref\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.deps.json
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\bin\Debug\net5.0\ref\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\ref\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Core\obj\Debug\net5.0\TLC.Core.pdb

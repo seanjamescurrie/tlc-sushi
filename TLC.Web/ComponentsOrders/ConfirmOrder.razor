@@ -1,0 +1,152 @@
+﻿@page "/confirm-order/{BasketId:int}"
+
+@inject IOrderService orderService
+@inject IBasketService basketService
+@inject IProductService productService
+@inject NavigationManager navManager
+
+@if (basket != null)
+{
+    <div class="card border-dark mt-4 rounded-sm confirm-order-form mx-auto">
+        <div class="card-verticle">
+            <div class="card-body d-flex flex-column">
+                <div class="container">
+                    <div class="order-title">
+                        <h6><b>CONFIRM ORDER</b></h6>
+                    </div>
+
+
+                    <EditForm Model="order" class="form-line" OnValidSubmit="OnDataAnnotationsValidated">
+                        <DataAnnotationsValidator></DataAnnotationsValidator>
+                        <div class="border-control">
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <label for="name"><b>Name</b></label>
+                                    <InputText id="name" @bind-Value="order.CustomerName" class="form-control"></InputText>
+                                    <ValidationMessage For=@(() => order.CustomerName) />
+                                </div>
+
+                                <div class="col-6 form-group">
+                                    <label for="name"><b>Email</b></label>
+                                    <InputText id="address" @bind-Value="order.EmailAddress" class="form-control"></InputText>
+                                    <ValidationMessage For=@(() => order.EmailAddress) />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col form-group">
+                                    <label for="name"><b>Address</b></label>
+                                    <InputText id="address" @bind-Value="order.CustomerAddress" class="form-control"></InputText>
+                                    <ValidationMessage For=@(() => order.CustomerAddress) />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <label for="deliveryDate"><b>Pickup/Delivery Date *</b></label>
+                                    <InputDate id="deliveryDate" @bind-Value="order.DeliveryDate" class="form-control"></InputDate>
+                                </div>
+
+                                <div class="col-6 form-group">
+                                    <label for="name"><b>Delivery</b></label>
+                                    <InputCheckbox id="delivery" @bind-Value="order.Delivery" class="form-control"></InputCheckbox>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <label for="summary"><b>Order Summary</b></label>
+                                    <ol>
+                                        @foreach (var item in order.BasketItems)
+                                        {
+                                            <li>@item.Product.Name <b>(@item.Quantity)</b></li>
+                                        }
+                                    </ol>
+                                </div>
+
+                                <div class="col-6 form-group">
+                                    <label for="totalPrice"><b>Total Price</b></label>
+                                    <h4><b>£@basket.TotalPrice.ToString("#.##")</b></h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="border-control">
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <button type="submit" class="basket btn btn-outline-dark btn-sm rounded-pill mt-3 btn-block">
+                                        <b>CONFIRM ORDER</b>
+                                    </button>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <button type="button" class="basket btn btn-warning btn-sm rounded-pill mt-3 btn-block"
+                                            @onclick="@(() => OnCancel())">
+                                        <b>CANCEL ORDER</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col">
+                                <p><i>* Pickup/Deliveries are <b>Friday or Saturday, 3 PM - 6 PM</b></i></p>
+                            </div>
+                        </div>
+
+                    </EditForm>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+}
+
+
+@code {
+    // [Parameter] public Order order { get; set; }
+    [Parameter] public int BasketId { get; set; }
+    // [Parameter] public Order Order { get; set; }
+
+    // [Parameter] public EventCallback<Order> Confirmed { get; set; }
+
+    public List<BasketItem> basketItems;
+    public Order order = new Order();
+    public Basket basket = new Basket();
+
+    protected override void OnInitialized()
+    {
+        // retrieving basket and assigning basketItems to var for display
+        basket = basketService.GetBasket(BasketId);
+        basketItems = basket.BasketItems;
+
+        // assigning order info from BasketId
+        // order = orderService.CreateOrder();
+        order.BasketItems = basketItems;
+        order.TotalPrice = basket.TotalPrice;
+        order.CustBasketId = basket.Id;
+
+    }
+
+    protected void OnDataAnnotationsValidated()
+    {
+        order = orderService.EditOrder(order);
+
+        foreach(var item in order.BasketItems)
+        {
+            var productSold = productService.GetProduct(item.ProductId);
+            productSold.Sold += item.Quantity;
+        }
+        // Confirmed.InvokeAsync(order);
+        navManager.NavigateTo($"/");
+    }
+
+    private void OnCancel()
+    {
+        basketService.Empty(basket.Id);
+        navManager.NavigateTo($"/", true);
+        orderService.DeleteOrder(order.Id);
+    }
+
+}

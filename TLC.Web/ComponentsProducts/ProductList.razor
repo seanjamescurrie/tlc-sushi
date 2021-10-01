@@ -1,0 +1,52 @@
+﻿@inject IBasketService basketService
+
+<div class="">
+    <!-- This was initially used to loop the list of products but it increased complexity substantially for the sake
+        of using a parent - child component architecture in such a smal setting - thus inefficient over-engineering-->
+
+    <!-- calling component and passing product list to our generic list 'List' as a param -->
+    <!--<GenericList List="Products">-->
+        <!-- Calling renderfragment -->
+        <!--<ElementTemplate>-->
+            <!-- pass the movie to component as param 'context' - references element in foreach of GenericList component Context="movie"-->
+            <!-- pass button state to component as param -->
+            <!-- pass delete movie method to component as param -->
+            <!--<IndividualProduct BasketId="BasketId" Product="context" OnProductAdded="OnProductAdded" />
+        </ElementTemplate>
+    </GenericList>-->
+
+    @foreach (var product in Products)
+    {
+        <IndividualProduct BasketId="BasketId" Product="product" OnProductAdded="OnProductAdded" />
+    }
+</div>
+
+
+@code {
+    [Parameter] public IList<Product> Products { get; set; }
+
+    // passing back basket to parent
+    [Parameter] public EventCallback<Basket> UpdateBasket { get; set; }
+
+    [Parameter] public int BasketId { get; set; }
+
+    // added product details taken from child
+    // invoke callback
+    private async Task OnProductAdded(Basket basket)
+    {
+        await UpdateBasket.InvokeAsync(basket);
+    }
+
+
+
+    @*private Basket AddProduct(Basket basket, Product product)
+        {
+            var basketReturn = basketService.AddProduct(basket.Id, product.Id);
+            var basketReturn = basketService.AddProduct(basket.Id, product.Id);
+            return basketReturn;
+
+        }*@
+
+
+
+}

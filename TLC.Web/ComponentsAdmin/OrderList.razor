@@ -1,0 +1,62 @@
+﻿@inject IOrderService orderService
+
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-6">
+            <h6><b>TOTAL ORDERS</b></h6>
+        </div>
+        <div class="col-6">
+            @*<button type="button" class="add-basket align-self-end btn btn-dark btn-sm rounded-pill mt-2"
+                    @onclick="@(() => AddOrder())">
+                <b>+ Create Order</b>
+            </button>*@
+        </div>
+    </div>
+    
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="col-1">ID</th>
+                <th class="col-2">Customer</th>
+                <th class="col-3">Basket Items</th>
+                <th class="col-3">Address</th>
+                <th class="col-1">Total</th>
+                <th class="col-1">Fulfilled</th>
+                <th class="col-1"></th>
+            </tr>
+        </thead>
+        <tbody class="thead">
+            @if (Orders != null && Orders.Count() > 0)
+            {
+                @foreach (var order in Orders)
+                {
+
+                    orderLineItems = order.BasketItems;
+                    <IndividualOrder EachOrder="order"></IndividualOrder>
+
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">
+                        <h6>You have no orders!</h6>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+@code {
+    [Parameter] public IList<Order> Orders { get; set; }
+
+    protected IList<BasketItem> orderLineItems;
+
+
+
+
+}

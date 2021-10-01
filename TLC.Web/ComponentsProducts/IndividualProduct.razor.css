@@ -1,0 +1,24 @@
+﻿.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.card-body {
+    background-color: #e5e5e5e5;
+}
+
+.add-basket {
+    font-size: 12px;
+    width: 10rem;
+}
+
+.product-details {
+    padding-right: 1rem;
+    border-right-style: solid;
+    border-right-color: #343a40;
+    border-right-width: thin;
+}

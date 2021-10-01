@@ -1,0 +1,30 @@
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.deps.json
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\ref\TLC.Data.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.CopyComplete
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\ref\TLC.Data.dll
+C:\CodeBase\Project\TLC6\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.deps.json
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\ref\TLC.Data.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Data.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Core.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\bin\Debug\net5.0\TLC.Core.pdb
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.AssemblyReference.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.AssemblyInfoInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.AssemblyInfo.cs
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.CoreCompileInputs.cache
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.csproj.CopyComplete
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\ref\TLC.Data.dll
+C:\CodeBase\Project\TLC6 - Copy\TLC\TLC\TLC.Data\obj\Debug\net5.0\TLC.Data.pdb

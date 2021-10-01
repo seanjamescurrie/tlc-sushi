@@ -1,0 +1,83 @@
+﻿@inject IProductService productService
+@inject IOrderService orderService
+@inject IBasketService basketService
+
+@if (EachOrder != null)
+{
+    <tr>
+        <td>
+            @*<NavLink href="@($"product/{Order.Id}")">
+
+                </NavLink>*@
+            @EachOrder.Id
+        </td>
+
+        <td>@EachOrder.CustomerName</td>
+
+        <td>
+            <select class="form-select" aria-label="Default select example">
+                @foreach (var item in EachOrder.BasketItems)
+                {
+
+                    <option>
+                        @item.Product.Name <b>(@item.Quantity)</b>
+                    </option>
+                }
+            </select>
+        </td>
+
+        <td>@EachOrder.CustomerAddress</td>
+
+        <td>£@EachOrder.TotalPrice</td>
+
+        <td>
+            <div>
+                <input type="checkbox" class="form-check form-switch" @bind="@EachOrder.Fulfilled" />
+                <label class="form-check-label" for="flexSwitchCheckDefault">@EachOrder.Fulfilled</label>
+            </div>
+        </td>
+
+        <td>
+            <a href="#" class="btn btn-outline-dark btn-sm rounded-circle" role="button" @onclick="@(() => DeleteOrder())"><ToolTip Text="Delete Order">x</ToolTip></a>
+        </td>
+    </tr>
+    @*<tr>
+        @foreach (var item in EachOrderLineItems)
+        {
+            <td>@item.Product.Name</td>
+        }
+    </tr>*@
+}
+
+@code {
+    // setting state/object as parameter to take on value of paramter passed to component from parent
+    [Parameter]
+    public Order EachOrder { get; set; }
+
+    public IList<BasketItem> EachOrderLineItems { get; set; }
+
+    public string itemName;
+
+    public BasketItem basket;
+
+    protected override void OnInitialized()
+    {
+        // retrieving basket and assigning basketItems to var for display
+        // basket = basketService.GetBasket(BasketId);
+        // basketItems = basket.BasketItems;
+
+        // generating order from basketId
+        // var order = orderService.CreateOrder();
+        // order.BasketItems = basketItems;
+        // order.TotalPrice = basket.TotalPrice;
+
+    }
+
+    private void DeleteOrder()
+    {
+        var delete = orderService.DeleteOrder(EachOrder.Id);
+    }
+
+
+
+}

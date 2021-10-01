@@ -1,0 +1,60 @@
+﻿.menu-nav {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.nav-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.login-card {
+    background-color: #e5e5e5;
+    width: 28rem;
+}
+
+.card {
+    background-color: #e5e5e5;
+}
+
+button {
+    text-align: right;
+}
+
+.order-title {
+    text-align: center;
+}
+
+
+
+.product-title {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.delivery {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}
+
+.basket {
+    text-align: center;
+}
+
+.border-control {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #343a40;
+}

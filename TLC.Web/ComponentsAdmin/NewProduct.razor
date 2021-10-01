@@ -1,0 +1,146 @@
+﻿@page "/order-management/new-product"
+
+@inject IProductService productService
+@inject NavigationManager navManager
+@*@attribute [Authorize]*@
+
+<div class="card border-dark mt-4 mb-4 rounded-sm new-product-form mx-auto">
+    <div class="card-verticle">
+        <div class="card-body d-flex flex-column">
+            <div class="container">
+                <div class="product-title">
+                    <h6><b>NEW PRODUCT INFO</b></h6>
+                </div>
+
+
+                <EditForm Model="product" class="form-line" OnValidSubmit="OnDataAnnotationsValidated">
+                    <DataAnnotationsValidator />
+
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label for="name"><b>Name</b></label>
+                            <InputText id="name" @bind-Value="product.Name" class="form-control"></InputText>
+                            <ValidationMessage For="@(() => product.Name)" />
+                        </div>
+
+                        <div class="col-2 form-group">
+                            <label for="price"><b>Price</b></label>
+                            <InputNumber id="prices" @bind-Value="product.Price" class="form-control"></InputNumber>
+                            <ValidationMessage For="@(() => product.Price)" />
+                        </div>
+
+                        <div class="col-2 form-group">
+                            <label for="pieces"><b>Pieces</b></label>
+                            <InputNumber id="pieces" @bind-Value="product.Pieces" class="form-control"></InputNumber>
+                            <ValidationMessage For="@(() => product.Pieces)" />
+                        </div>
+
+                        <div class="col-2 form-group">
+                            <label for="stockLimit"><b>Stock</b></label>
+                            <InputNumber id="limit" @bind-Value="product.Limit" class="form-control"></InputNumber>
+                            <ValidationMessage For="@(() => product.Limit)" />
+                        </div>
+                    </div>
+
+                    <div class="border-control">
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <label for="Description"><b>Description</b></label>
+                                <InputTextArea id="description" @bind-Value="product.Description" class="form-control"></InputTextArea>
+                                <ValidationMessage For="@(() => product.Description)" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="productType"><b>Product Type</b></label>
+                                <InputSelect id="productTypes" @bind-Value="product.ProductType" class="form-control">
+                                    @foreach (var type in productTypes)
+                                    {
+                                        <option>
+                                            @type.ToString()
+                                        </option>
+                                    }
+                                </InputSelect>
+                            </div>
+
+                            <div class="col-6 form-group">
+                                <label for="image"><b>Image</b></label>
+                                <InputText id="image" @bind-Value="product.ImageUrl" class="form-control"></InputText>
+                                <ValidationMessage For="@(() => product.ImageUrl)" />
+                                @*<InputImg Label="" OnSelectedImage="PosterSelected" />*@
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="border-control">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <button type="submit" class="basket btn btn-outline-dark btn-sm rounded-pill mt-2 btn-block">
+                                    <b>CREATE PRODUCT</b>
+                                </button>
+                            </div>
+                            <div class="col-6 form-group">
+                                <button type="button" class="basket btn btn-warning btn-sm rounded-pill mt-2 btn-block"
+                                        @onclick="@(() => OnCancel())">
+                                    <b>CANCEL</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </EditForm>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+
+    public Product product = new Product();
+    private string imgUrl;
+
+    public List<ProductType> productTypes = new List<ProductType>
+{
+        ProductType.Boxes,
+        ProductType.IndividualRolls,
+        ProductType.PokeBowls,
+        ProductType.Sides,
+        ProductType.Sauces
+    };
+
+    protected override void OnInitialized()
+    {
+        // retrieving basket and assigning basketItems to var for display
+
+        // generating order from basketId
+
+    }
+
+    private void PosterSelected(string imageBase64)
+    {
+        product.ImageUrl = imageBase64;
+    }
+
+    protected void OnDataAnnotationsValidated()
+    {
+
+        product = productService.CreateProduct(product);
+        // Confirmed.InvokeAsync(product);
+        navManager.NavigateTo($"/order-management");
+    }
+
+    private void OnCancel()
+    {
+
+        navManager.NavigateTo($"/order-management");
+    }
+
+}

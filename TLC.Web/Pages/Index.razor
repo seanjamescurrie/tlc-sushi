@@ -1,0 +1,100 @@
+﻿@page "/"
+@page "/#"
+@inject IProductService productService
+@inject IBasketService basketService
+@inject IOrderService orderService
+
+<!-- Menu Item Selection -->
+
+<div class="nav-container">
+    <div class="row mt-6 mb-2 text-center">
+        <div class="col-12 text-center">
+            @foreach (var type in filterOptions)
+            {
+                <button type="button" class="menu-nav align-self-end btn btn-outline-dark btn rounded-pill"
+                        @onclick="@(() => TypeSelect(type))">
+                    <b>@type.ToString().ToUpper()</b>
+                </button>
+            }
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Page Body Components -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <ProductList Products="products" BasketId="basket.Id" UpdateBasket="UpdateBasket"></ProductList>
+        </div>
+        <div class="col-4">
+            @*<BasketComponent BasketParam="basket" PlaceOrder="PlaceOrder"></BasketComponent>*@
+            <BasketComponent BasketParam="basket"></BasketComponent>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+
+    [CascadingParameter] public Error Error { get; set; }
+
+    public ProductType filter = new ProductType();
+
+    public List<ProductType> filterOptions = new List<ProductType>
+{
+        ProductType.Boxes,
+        ProductType.IndividualRolls,
+        ProductType.PokeBowls,
+        ProductType.Sides,
+        ProductType.Sauces
+    };
+
+    private IList<Product> products = new List<Product>();
+    private IList<Order> orders = new List<Order>();
+    private Basket basket = new Basket();
+    // private Order order = new Order();
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            // decoupling component from data thanks to DI, data comes from a service
+            // good software architecture
+            products = productService.GetProducts();
+            basket = basketService.CreateBasket();
+        }
+        catch (Exception ex)
+        {
+            Error.ProcessError(ex);
+        }
+    }
+
+    private void TypeSelect(ProductType type)
+    {
+        filter = type;
+
+        products = productService.GetProducts(filter);
+    }
+
+    // Update basket with products from product components - EVENTCALLBACK
+    private async Task UpdateBasket(Basket newBasket)
+    {
+        basket = newBasket;
+        StateHasChanged();
+
+    }
+
+
+
+    // Place Order with basket
+    @*private async Task PlaceOrder(Order newOrder)
+        {
+            order = newOrder;
+            StateHasChanged();
+
+        }*@
+}
